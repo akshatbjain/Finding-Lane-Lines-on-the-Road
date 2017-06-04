@@ -27,14 +27,27 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Additionally, I also added a memory feature. There might be times when the algorithm might fail due to some change in the environment. But the car should not lose it's sense of direction and should use the previous information to move forward until it can find more information and the algorithm starts working again. In the scenario, where the algorithm is not able to detect new lane lines, it will use the previous lane line positions to maintain direction.
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Shown below is my pipeline represented as images:
 
+0. Original Image
 ![alt text][image1]
+
+1. Image converted to Grayscale
 ![alt text][image2]
+
+2. Image after applying Gaussian Blur
 ![alt text][image3]
+
+3. Image after applying Canny Edge Detection
 ![alt text][image4]
+
+4. Defining Region of Interest
 ![alt text][image5]
+
+5. Image after applying Hough Transform
 ![alt text][image6]
+
+6. Superimposing detected lane lines on Original Image
 ![alt text][image7]
 
 
