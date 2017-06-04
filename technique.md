@@ -7,13 +7,17 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./pipeline_steps/0.Original_image.png "Original Image"
+[image2]: ./pipeline_steps/1.Grayscale_image.png "Image converted to Grayscale"
+[image3]: ./pipeline_steps/2.After_Gaussian_Blur.png "Image after applying Gaussian Blur"
+[image4]: ./pipeline_steps/3.After_Canny_Edge_Detection.png "Image after applying Canny Edge Detection"
+[image5]: ./pipeline_steps/4.Region_of_Interest.png "Defining Region of Interest"
+[image6]: ./pipeline_steps/5.After_Hough_Transform.png "Image after applying Hough Transform"
+[image7]: ./pipeline_steps/6.Superimposed_image.png "Superimposing detected lane lines on Original Image"
 
 ---
 
 ### Reflection
-
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 6 steps. 
 
@@ -26,15 +30,18 @@ Additionally, I also added a memory feature. There might be times when the algor
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 ![alt text][image1]
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
 
 
-### 2. Identify potential shortcomings with your current pipeline
-
-One potential short coming may be steep turns. I don't really have enough data to test my algorithm there.
-
-Also, since this is an ROI based algorithm, it would fail if the camera position is changed.
+Potential Shortcomings:
+1. One potential short coming may be steep turns. I don't really have enough data to test my algorithm there.
+2. Also, since this is an ROI based algorithm, it would fail if the camera position is changed.
 
 
-### 3. Suggest possible improvements to your pipeline
-
+Possible Improvements:
 Getting rid of the ROI and making the algorithm more dynamic to different lighting conditions.
